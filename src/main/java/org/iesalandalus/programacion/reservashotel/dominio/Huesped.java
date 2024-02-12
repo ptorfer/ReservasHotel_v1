@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class Huesped {
 
     //2. Creaci�n de atributos.
-    private static final String ER_TELEFONO = "[96]\\d{8}";
+    private static final String ER_TELEFONO = "[9876]\\d{8}";
     private static final String ER_CORREO = ".+@[a-zA-Z]+\\.[a-zA-Z]+";
     private static final String ER_DNI = "(\\d{8})([A-HJ-NP-TV-Z])";
     public static final String FORMATO_FECHA = "dd/mm/yyyy";
@@ -19,7 +19,7 @@ public class Huesped {
     private String dni;
     private LocalDate fechaNacimiento;
 
-    //3. Creaci�n de m�todo formateaNombre.
+    //*3. Creación método formateaNombre
     private String formateaNombre(String nombre) {
 
         String palabra = "";
